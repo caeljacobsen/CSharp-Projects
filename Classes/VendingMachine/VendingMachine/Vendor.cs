@@ -47,5 +47,10 @@ namespace VendingMachine
         {
             return itemStock[desiredPos].Dequeue();
         }
+
+        public void stockItems(string position, Item item)
+        {
+            ItemStock[position].Enqueue(item); 
+        }
     }
 }
